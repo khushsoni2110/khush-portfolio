@@ -13,6 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -32,6 +33,7 @@ main.home {
   padding: 40px;
   align-items: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 main.home img {
@@ -131,3 +133,40 @@ footer {
   color: white;
   margin-top: 60px;
 }
+
+/* ======= Responsive Design ======= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+
+  main.home {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  main.home img {
+    max-width: 150px;
+  }
+
+  .form-container {
+    margin: 60px auto;
+    padding: 20px;
+    width: 90%;
+  }
+}
+
