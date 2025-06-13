@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate - Python for Everybody</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .certificate-detail {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .certificate-detail img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .certificate-detail h2 {
+            color: #333;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .certificate-detail p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background: #007BFF;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+        }
+
+        .back-link:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body onload="checkLogin()">
+    <header>
+        <h1>Certificate Detail</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="internships.html">Internships</a>
+            <a href="login.html" onclick="logout()">Logout</a>
+        </nav>
+    </header>
+
+    <main class="certificate-detail">
+        <img src="assets/images/Simplilearn.png" alt="Simplilearn Certificate" />
+        <h2>Introduction to Data Mining - Simplilearn (Skillup)</h2>
+        <p>
+            This certificate verifies the successful completion of the "Introduction to Data Mining Course" offered by
+            Simplilearn (Online Mode).
+            The course covered essential data mining concepts, data preprocessing techniques, classification and
+            clustering methods, association rule mining, and practical applications in real-world business scenarios. It
+            also introduced industry-relevant tools and techniques to analyze, interpret, and extract meaningful
+            insights from large datasets.
+        </p>
+        <p>
+            Issued in May 2025, this certification demonstrates a solid understanding of data mining principles and
+            practical applications.
+            Awarded by Simplilearn via its SkillUp platform, the course covered core concepts including data
+            preprocessing, classification, clustering, and association rule mining. Learners gained hands-on knowledge
+            in extracting patterns from data and applying analytical techniques using real-world case studies and tools.
+            The training highlighted problem-solving approaches in business intelligence and data analysis.
+        </p>
+        <a href="certificates.html" class="back-link">← Back to Certificates</a>
+    </main>
+
+    <footer>
+        <p>© 2025 Khush Soni. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
