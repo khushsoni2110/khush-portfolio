@@ -72,10 +72,17 @@ body {
 /* ========================
    Responsive Design
    ======================== */
-@media (max-width: 768px) {
+
+  @media (max-width: 768px) {
   .container {
     padding: 20px;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
   }
 
   .card-content h3 {
@@ -88,7 +95,8 @@ body {
 
   .view-button {
     display: block;
-    width: 100%;
+    width: 20%;
     text-align: center;
   }
 }
+
